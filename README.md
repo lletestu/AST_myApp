@@ -14,6 +14,8 @@ This is a node.js project for Asynchronous Server Technologies (ECE Paris course
 Web site with login and display graph to analyse Forex Market with an embedded database.
 
 ## Architecture
+
+```
 .
 ├── app.js
 ├── bin
@@ -33,3 +35,4 @@ Web site with login and display graph to analyse Forex Market with an embedded d
     ├── error.jade
     ├── index.jade
     └── layout.jade
+```
