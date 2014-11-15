@@ -2,31 +2,73 @@ extends layout
 
 block content
 
-  div.jumbotron
-    h1= title
-    p Welcome to #{title}
 
-    form.form-horizontal(method="post", id="loginForm")
-      label Username
-      input.span3(id="username", type="text", name="User", placeholder="Enter your username")
-      label Password
-      input.span3(id="password", type="password", name="Password")
-      input.btn(type="submit", value="Log In")
-
-  div.container
+  // NAVBAR
+    
+  nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+    div.container
+      div.navbar-header
+        button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href="#") Brand
+          
+      div#navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li.active
+            a(href="#") Home
+          li
+            a(href="#about") About
+          li
+            a(href="#contact") Contact
+              
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="#") SecondTop
+          li.active
+            a(href="#") FirstTop
+  
+  
+  // CONTAINER
+  
+  div.container.separator
+    
+    div.jumbotron
+      h1= title
+      p Welcome to #{title}
+      p This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.
+    
+    div.jumbotron
+      div.form-horizontal.signup-form(role="form")
+          form(method="post", id="loginForm")
+            h2 Please sign in
+            div.form-group
+                label.col-sm-2.control-label Username
+                div.col-sm-4
+                  input.form-control(id="username", size="30", maxlength="30", type="text", name="user", placeholder="Username")    
+            div.form-group
+                label.col-sm-2.control-label Password
+                div.col-sm-4
+                  input.form-control(id="password", type="password", name="user", placeholder="Password")
+            div.col-sm-6
+                button.btn.btn-primary.pull-right(type="submit") Sign in
+    
     div.content
       table.table.table-striped
         thead
           tr
-            th Table
-            th Heading
+            th Header1
+            th Header2
         tbody
           tr
-            td Blah
-            td Test
+            td row1
+            td row1
           tr
-            td Hello
-            td World
+            td Row2
+            td Row3
 
   div.footer
-    p My footer
+      p © 2014 - All rights reserved.
+      p Lauren Letestu

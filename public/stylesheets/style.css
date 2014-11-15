@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+.separator {
+  margin-top: 25px;
+}
+
+.footer {
+  background-color: #EAEAEA;
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 5px;
+}
