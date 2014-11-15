@@ -13,5 +13,26 @@
     "serve-favicon": "~2.1.3",
     "debug": "~2.0.0",
     "jade": "~1.6.0"
-  }
+  },
+  "description": "This is a node.js project for Asynchronous Server Technologies (ECE Paris course).",
+  "main": "www",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lletestu/AST_myApp.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "npm",
+    "bootstrap",
+    "jade",
+    "coffeescript"
+  ],
+  "author": "Lauren Letestu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lletestu/AST_myApp/issues"
+  },
+  "homepage": "https://github.com/lletestu/AST_myApp"
 }
