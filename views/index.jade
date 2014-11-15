@@ -1,38 +1,9 @@
 extends layout
 
 block content
-
-
-  // NAVBAR
-    
-  nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
-    div.container
-      div.navbar-header
-        button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar")
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href="#") Brand
-          
-      div#navbar.navbar-collapse.collapse
-        ul.nav.navbar-nav
-          li.active
-            a(href="#") Home
-          li
-            a(href="#about") About
-          li
-            a(href="#contact") Contact
-              
-        ul.nav.navbar-nav.navbar-right
-          li
-            a(href="#") SecondTop
-          li.active
-            a(href="#") FirstTop
-  
+  include navbar
   
   // CONTAINER
-  
   div.container.separator
     
     div.jumbotron
@@ -42,16 +13,16 @@ block content
     
     div.jumbotron
       div.form-horizontal.signup-form(role="form")
-          form(method="post", id="loginForm")
+          form(method="post", id="loginForm", action="/dashboard")
             h2 Please sign in
             div.form-group
                 label.col-sm-2.control-label Username
                 div.col-sm-4
-                  input.form-control(id="username", size="30", maxlength="30", type="text", name="user", placeholder="Username")    
+                  input.form-control(id="username", size="30", maxlength="30", type="text", name="username", placeholder="Username")    
             div.form-group
                 label.col-sm-2.control-label Password
                 div.col-sm-4
-                  input.form-control(id="password", type="password", name="user", placeholder="Password")
+                  input.form-control(id="password", type="password", name="password", placeholder="Password")
             div.col-sm-6
                 button.btn.btn-primary.pull-right(type="submit") Sign in
     
@@ -70,5 +41,4 @@ block content
             td Row3
 
   div.footer
-      p © 2014 - All rights reserved.
-      p Lauren Letestu
+      include footer

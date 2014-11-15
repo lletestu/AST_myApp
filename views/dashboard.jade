@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  include navbar
+  
+  // CONTAINER
+  div.container.separator
+    
+    div.jumbotron
+      h1= title
+      p User : #{user}
+      p Password : #{pass}
+      
+  div.footer
+    include footer
