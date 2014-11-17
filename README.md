@@ -36,3 +36,7 @@ Web site with login and display graph to analyse Forex Market with an embedded d
     ├── index.jade
     └── layout.jade
 ```
+## Authors
+Alexandre Dejacques
+Lauren Letestu
+Thomas Pansart
